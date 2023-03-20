@@ -1,0 +1,74 @@
+<!-- META ETİKETLERİ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+       <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale1.0">  
+    <meta name="keywords" content="kutay"> 
+    <meta name ="description" content=" AÇIKLAMA SATIRI">
+
+    <title> HTML NOTLARIM </title>
+    </head>
+
+    <body>
+        
+        <!--    ol,ul ve li Etiketleri ile Liste Oluşturmak   -->
+
+        <!--
+            <ol> etiketi kullanılarak oluşturulan listeler sıralı listelerdir. Sıralama sayısal, alfabetik ya da romen rakamları ile yapılabilir.
+            <ul> etiketi ile oluşturulan listelerde ise sıralama elemanı bir grafik semboldür.
+            <li> etiketi bu etiketlerin yorum aralığında kullanılarak liste öğeleri verilir.
+        -->
+    <h3>İÇECEKLER</h3>
+    <ol type="i">
+        
+          <li>Soğuk İçecekler</li>
+          <ul>
+            <li>Kola</li>
+            <li>Ayran</li>
+          </ul>
+
+          <li>Sıcak İçecekler</li>
+          <ul>
+            <li>Çay</li>
+            <li>Kahve</li>
+             <ul>Türk Kahvesi</ul>
+          </ul>
+      
+    </ol>
+<!--    Liste kullanımı için yardımcı kodlar
+ 
+  type = "listeleme türü"	Bu alanda belirtilebilecek değerleri aşağıda bir tablo halinde verdim.
+  start = "değer"	Sadece <ol> etiketi içindir. Sıralama elemanının başlangıç değerini belirtmekte kullanılır.
+  value = "değer"	Sadece <li> etiketi içindir. Yorum aralığındaki liste öğesinin numarasını belirtmek amacıyla kullanılır. start = "değer" parametresi ile belirtilen değer, sayısal olmasa bile burada sayısal bir "değer" belirtilebilir.
+
+    Sıralamasız liste (<ul>) türü değerleri:
+      Sıralamasız listlerde liste öğelerini belirtmek için 3 sembol ismi kullanılır:
+      1. disc - İçi dolu bir daire görüntüler
+      2. circle - İçi boş bir daire görüntüler
+      3. square - İçi dolu ya da boş bir kare görüntüler
+
+Türü	Sıralama
+  1	  Onluk tabanda numaralama (1,2,3,4,...)
+  i	  Küçük rakamlarla romen sayıları (i,ii,iii,iv,...)
+  I	  Büyük rakamlarla romen sayıları (I,II,III,IV,...)
+  a	  Küçük harflerle alfabetik (a,b,c,...)
+  A	  Büyük harflerle alfabetik (A,B,C,...)
+
+-->
+<ol type="i">
+  <li> Birinci öğe...</li>
+  <li> İkinci öğe ...
+     <ul type="square">
+       <li>İkinci öğenin bir öğesi...
+       <li>İkinci öğenin başka bir öğesi...
+     </ul>
+  </li>
+  <li> Üçüncü öğe...</li>
+</ol>
+
+</body>
+
+</html>
